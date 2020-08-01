@@ -1,0 +1,45 @@
+ .header{
+ background-color: black;  
+ }
+.nav span{
+  color: white;
+  font-size: 20px;
+}
+ body {
+    width:100%;
+    margin:0 auto;
+    padding: 30px;
+    }
+.sidebar{
+  width:580px;
+  min-height:500px;
+  height:auto;
+  float:left;
+  margin-top:10px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 150px;
+  padding-right: 60px;
+  }
+.menu{
+  margin-left:580px;
+  width:700px;
+  min-height:500px;
+  height:auto;
+  margin-top:30px;
+  margin-right:300px;
+}
+.editing{
+ margin-left: 25%;
+ margin-right: 25%;
+}
+.flash{
+  margin-top: 20px;
+  color: green;
+}
+.top-message {
+  margin-top: 50px;
+}
+.bottons{
+  color: black;
+}

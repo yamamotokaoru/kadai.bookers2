@@ -1,0 +1,20 @@
+
+
+<h1>User info</h1>
+
+<%= form_for(@user) do |f| %>
+    <% if @user.errors.any? %>
+    <%= @user.errors.count %>errors prohibited this book from being saved
+    <% @user.errors.full_messages.each do |message| %>
+    <%= message %>
+    <% end %>
+    <% end %>
+
+    <span>Name</span><%= f.text_field :name %>
+    <br><span>image</span><%= attachment_image_tag @user, :profile_image, :fill, 60, 60,fallback: "no_image.jpg" %>
+    <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
+    <br><span>introduction</span>
+
+    <%= f.text_area :introduction %>
+    <%= f.submit "Update User"%>
+<% end %>
